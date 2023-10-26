@@ -1,2 +1,8 @@
 # car-store
-Funcionalidade de enviar e-mails
+
+Para executar o projeto, utilize o comando na pasta raíz:
+
+<code>
+node index.js
+</code>
+

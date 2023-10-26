@@ -1,7 +1,7 @@
-import { emailList } from  '../gsilv/email-list.js';
-import { isMonday } from '../gsilv/week-day-validation.js';
-import { generateEmailContentObject } from '../gsilv/email-content-generator.js';
-import { enviarEmail } from '../gsilv/email-service.js';
+import { emailList } from  './email-list.js';
+import { isMonday } from './week-day-validation.js';
+import { generateEmailContentObject } from './email-content-generator.js';
+import { enviarEmail } from './email-service.js';
 
 async function fireNewsletter(){
     if(isMonday()){
