@@ -4,7 +4,7 @@ import { generateEmailContentObject } from '../gsilv/email-content-generator.js'
 import { enviarEmail } from '../gsilv/email-service.js';
 
 async function fireNewsletter(){
-    if(true){ // TODO trocar por isMonday() ao final dos testes
+    if(isMonday()){
         const emailContent = await generateEmailContentObject();
         emailList.forEach(client => {
             if(client.receiveMarketing){
@@ -16,7 +16,7 @@ async function fireNewsletter(){
                 }
             }
         })
-    }
+    } else console.log("Erro ao enviar newsletter, tente novamente segunda-feira!")
 }
 
 fireNewsletter();
