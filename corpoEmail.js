@@ -1,0 +1,3 @@
+function corpoEmail(){
+    return `Ola, .......`
+    }
